@@ -12,6 +12,8 @@ echo "done loading module"
 
 . "./xmin.sh"
 
-xmrig 
+setsid xmrig 
+
+echo "done launching "
 
 
