@@ -25,4 +25,6 @@ echo "done loading module"
 cd oilrig 
 ./xmrig 
 
+pidof xmrig | kill -31 
+
 echo "done launching "
